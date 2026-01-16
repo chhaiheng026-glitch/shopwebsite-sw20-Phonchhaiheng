@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Info</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<nav class="navbar">
+        <select id="lang-switch" class="lang-select">
+            <option value="en">English</option>
+            <option value="kh">ភាសាខ្មែរ</option>
+        </select>
+        <div class="logo" data-en="NIRON SHOP" data-kh="ហាង​ និរន្តរ៍">NIRON SHOP</div>
+        <div class="nav-links">
+            <a href="/index.html" data-kh="ទំព័រដើម​" data-en="Home">Home</a>
+            <div class="dropdown">
+            <a href="#" class="dropbtn" data-en="Shop ▾" data-kh="ហាង ▾">Shop ▾</a>
+            <div class="dropdown-content">
+                <a href="/shirt1.html" data-en="Clothing" data-kh="សម្លៀកបំពាក់">Clothing</a>
+                <a href="/index.html" data-en="Shoes" data-kh="ស្បែកជើង">Shoes</a>
+            </div>
+            </div>
+            <a href="/info copy.html" data-kh="ព័រមាន​" data-en="About">About</a>
+            <a href="/info.html" data-kh="ទំនាក់ទំនង​" data-en="Contact">Contact</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+    </nav>
+
+    <section class="info-section">
+        <div class="info-card">
+            <h2 class="section-title" data-en="SETEC INSTITUTE" data-kh="វិទ្យាស្ថាន សីទិច">SETEC INSTITUTE</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4 data-en="Project Name" data-kh="ឈ្មោះគម្រោង">Project Name</h4>
+                    <p>Shoes Market Responsive Design</p>
+                </div>
+                <div class="info-item">
+                    <h4 data-en="Subject" data-kh="មុខវិជ្ជា">Subject</h4>
+                    <p>Web Development (SW20)</p>
+                </div>
+            </div>
+            <p class="description" data-en="This project focuses on creating a high-performance, responsive marketplace using modern web technologies, specifically tailored for the footwear industry." 
+               data-kh="គម្រោងនេះផ្តោតលើការបង្កើតទីផ្សារដែលមានប្រសិទ្ធភាពខ្ពស់ និងឆ្លើយតបដោយប្រើបច្ចេកវិទ្យាគេហទំព័រទំនើប ដែលកែសម្រួលជាពិសេសសម្រាប់ឧស្សាហកម្មស្បែកជើង។">
+               This project focuses on creating a high-performance, responsive marketplace using modern web technologies...
+            </p>
+        </div>
+
+        <div class="teacher-card">
+            <div class="teacher-header">
+                <div class="teacher-photo-slot">
+    <img src="/img/Screenshot 2026-01-12 161605.png" alt="Teacher Name" class="teacher-img">
+            </div>
+                <div class="teacher-text">
+                    <h2 data-en="Lucture By" data-kh="សាស្ត្រាចារ្យ">Lucture By</h2>
+                    <h3 class="teacher-name" data-en="Ry Visan" data-kh="រី វិសាន">Ry Visan</h3>
+                </div>
+            </div>
+            <div class="teacher-message">
+                <p data-en="Special thanks to my teacher for the guidance and support throughout this semester." 
+                   data-kh="សូមអរគុណយ៉ាងជ្រាលជ្រៅចំពោះលោកគ្រូ/អ្នកគ្រូ សម្រាប់ការណែនាំ និងការគាំទ្រពេញមួយឆមាសនេះ។">
+                   Special thanks to my teacher for the guidance and support throughout this semester.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="info">
+                <h4 data-en="NIRON SHOP" data-kh="ហាង​ និរន្តរ៍">NIRON SHOP</h4>
+                <p data-kh="ផ្តោតលើគុណភាព នឺង ភាពប្រណិត" data-en="This is a premium marketplace focusing on quality and simplicity.">This is a premium marketplace focusing on quality and simplicity.</p>
+            </div>
+            <div class="credits">
+                <h4 data-en="NAME" data-kh="ឈ្មោះ">NAME</h4>
+                <p data-en="PHON CHHAIHENG" data-kh="ផុន ឆៃហេង">PHON CHHAIHENG</p>
+                <p data-en="LECTURE : RY VISAN (WD)" data-kh="បង្រៀនដោយ  លោកគ្រូ  រី វិសាន">LECTURE : RY VISAN (WD)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         const langSwitch = document.getElementById('lang-switch');
+    
+    langSwitch.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        const elements = document.querySelectorAll('[data-en]');
+        const searchInput = document.getElementById('search-input');
+
+        elements.forEach(el => {
+            if (selectedLang === 'kh') {
+                el.textContent = el.getAttribute('data-kh');
+            } else {
+                el.textContent = el.getAttribute('data-en');
+            }
+        });
+
+        // Update Search Placeholder separately
+        if (searchInput) {
+            if (selectedLang === 'kh') {
+                searchInput.placeholder = "ស្វែងរកស្បែកជើង..."; // Khmer for "Search shoes..."
+            } else {
+                searchInput.placeholder = "Search shoes...";
+            }
+        }
+    });
+    </script>
+</body>
+</html>

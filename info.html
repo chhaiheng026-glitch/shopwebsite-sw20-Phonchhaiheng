@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Info</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<nav class="navbar">
+        <select id="lang-switch" class="lang-select">
+            <option value="en">English</option>
+            <option value="kh">ភាសាខ្មែរ</option>
+        </select>
+        <div class="logo" data-en="NIRON SHOP" data-kh="ហាង​ និរន្តរ៍">NIRON SHOP</div>
+        <div class="nav-links">
+            <a href="/index.html" data-kh="ទំព័រដើម​" data-en="Home">Home</a>
+            <div class="dropdown">
+            <a href="#" class="dropbtn" data-en="Shop ▾" data-kh="ហាង ▾">Shop ▾</a>
+            <div class="dropdown-content">
+               <a href="/shirt1.html" data-en="Clothing" data-kh="សម្លៀកបំពាក់">Clothing</a>
+                <a href="/index.html" data-en="Shoes" data-kh="ស្បែកជើង">Shoes</a>
+            </div>
+            </div>
+            <a href="/info copy.html" data-kh="ព័រមាន​" data-en="About">About</a>
+            <a href="/info.html" data-kh="ទំនាក់ទំនង​" data-en="Contact">Contact</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+    </nav>
+
+    <div class="profile-wrapper">
+        <div class="profile-card">
+            <div class="profile-image-container">
+                <img src="/img/Me A2I.png" alt="Your Name" class="profile-pic">
+                </div>
+
+            <div class="profile-content">
+                <h1 class="profile-name" data-en="PHON CHHAIHENG" data-kh="ផុន ឆៃហេង">PHON CHHAIHENG</h1>
+                <p class="profile-title">Developer And Design</p>
+                
+                <hr class="divider">
+
+                <div class="profile-bio">
+                    <h3 data-kh="ព័រមានផ្ទាល់ខ្លួន" data-en="Personal Information">Personal Information</h3>
+                    <p
+                    data-en="Welcome to my market! I have over 10 years of experience in sourcing high-quality products. My mission is to provide clear value and exceptional service to every client."
+                    data-kh="សូមស្វាគមន៍មកកាន់ទីផ្សាររបស់ខ្ញុំ! ខ្ញុំមានបទពិសោធន៍ជាង 10 ឆ្នាំក្នុងការស្វែងរកផលិតផលដែលមានគុណភាពខ្ពស់។ បេសកកម្មរបស់ខ្ញុំគឺផ្តល់តម្លៃច្បាស់លាស់ និងសេវាកម្មពិសេសដល់អតិថិជនគ្រប់រូប។">Welcome to my market! I have over 10 years of experience in sourcing high-quality products. My mission is to provide clear value and exceptional service to every client.</p>
+                </div>
+
+                <section class="contact-section">
+    <div class="contact-container">
+        <h2 data-en="Contact Us" data-kh="ទាក់ទងមកយើង">Contact Us</h2>
+        <p data-en="Enter your details and we will reach out to you." data-kh="សូមបញ្ចូលព័ត៌មានរបស់អ្នក ហើយយើងនឹងទាក់ទងទៅអ្នកវិញ។">
+            Enter your details and we will reach out to you.
+        </p>
+
+        <form class="contact-form">
+            <div class="input-group">
+                <label for="email" data-en="Email Address" data-kh="អាសយដ្ឋានអ៊ីមែល">Email Address</label>
+                <input type="email" id="email" placeholder="example@mail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone" data-en="Phone Number" data-kh="លេខទូរស័ព្ទ">Phone Number</label>
+                <input type="tel" id="phone" placeholder="012 345 678" required>
+            </div>
+
+            <button type="submit" class="submit-btn" data-en="Send Information" data-kh="ផ្ញើព័ត៌មាន">Send Information</button>
+        </form>
+    </div>
+</section>
+
+                <button class="buy-btn" data-en="Contact Me Directly" data-kh="ទាក់ទងមកផ្ទាល់">Contact Me Directly</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="info">
+                <h4 data-en="NIRON SHOP" data-kh="ហាង​ និរន្តរ៍">NIRON SHOP</h4>
+                <p data-kh="ផ្តោតលើគុណភាព នឺង ភាពប្រណិត" data-en="This is a premium marketplace focusing on quality and simplicity.">This is a premium marketplace focusing on quality and simplicity.</p>
+            </div>
+            <div class="credits">
+                <h4 data-en="NAME" data-kh="ឈ្មោះ">NAME</h4>
+                <p data-en="PHON CHHAIHENG" data-kh="ផុន ឆៃហេង">PHON CHHAIHENG</p>
+                <p data-en="LECTURE : RY VISAN (WD)" data-kh="បង្រៀនដោយ  លោកគ្រូ  រី វិសាន">LECTURE : RY VISAN (WD)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         const langSwitch = document.getElementById('lang-switch');
+    
+    langSwitch.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        const elements = document.querySelectorAll('[data-en]');
+        const searchInput = document.getElementById('search-input');
+
+        elements.forEach(el => {
+            if (selectedLang === 'kh') {
+                el.textContent = el.getAttribute('data-kh');
+            } else {
+                el.textContent = el.getAttribute('data-en');
+            }
+        });
+
+        // Update Search Placeholder separately
+        if (searchInput) {
+            if (selectedLang === 'kh') {
+                searchInput.placeholder = "ស្វែងរកស្បែកជើង..."; // Khmer for "Search shoes..."
+            } else {
+                searchInput.placeholder = "Search shoes...";
+            }
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project SW20</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <select id="lang-switch" class="lang-select">
+            <option value="en">English</option>
+            <option value="kh">ភាសាខ្មែរ</option>
+        </select>
+        <div class="logo" data-en="NIRON SHOP" data-kh="ហាង​ និរន្តរ៍">NIRON SHOP</div>
+        <div class="nav-links">
+            <a href="#" data-kh="ទំព័រដើម​" data-en="Home">Home</a>
+            <div class="dropdown">
+            <a href="#" class="dropbtn" data-en="Shop ▾" data-kh="ហាង ▾">Shop ▾</a>
+            <div class="dropdown-content">
+                <a href="#" data-en="Clothing" data-kh="សម្លៀកបំពាក់">Clothing</a>
+                <a href="/index.html" data-en="Shoes" data-kh="ស្បែកជើង">Shoes</a>
+
+            </div>
+            </div>
+            <a href="/info copy.html" data-kh="ព័រមាន​" data-en="About">About</a>
+            <a href="/info.html" data-kh="ទំនាក់ទំនង​" data-en="Contact">Contact</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+    </nav>
+
+    <header class="slider-container">
+    <div class="slider">
+        <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/banner.jpg');">
+            <div class="slide-content">
+                <h1 data-en="Premium Quality" data-kh="គុណភាពខ្ពស់">Premium Quality</h1>
+                <p data-en="Best products for your lifestyle" data-kh="ផលិតផលល្អបំផុតសម្រាប់ជីវិតរបស់អ្នក">Best products for your lifestyle</p>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/8dae7bb0ca028b3c9ea7f22c3fd71496.jpg');">
+            <div class="slide-content">
+                <h1 data-en="New Arrivals" data-kh="ទំនិញមកដល់ថ្មី">New Arrivals</h1>
+                <p data-en="Check out our latest collection" data-kh="ពិនិត្យមើលការប្រមូលចុងក្រោយរបស់យើង">Check out our latest collection</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</header>
+
+    <main class="product-container">
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t1.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Shirt" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$239</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t2.jpg" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Olive Green" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$139</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t3.jpg" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Sand Beige" data-kh="ស្បែកពាក់ Midnight">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$239</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t4.jpg" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Matte Black" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$265</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t5.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Midnight Runner" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$139</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t6.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Midnight Runner" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$639</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t7.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Midnight Runner" data-kh="អាវស្អាត">SHirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$119</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t8.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Midnight Runner" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$239</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t9.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Midnight Runner" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$1239</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t10.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Shirt" data-kh="អាវស្អាត">Shirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$239</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t11.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Midnight Runner" data-kh="អាវស្អាត">SHirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$39</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        <div class="product-box">
+        <div class="product-image-slot">
+        <img src="/img/Shirt/t12.webp" alt="Running Shoes" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+        <h3 data-en="Limited Edition Gold-Dust "data-kh="អាវស្អាត">SHirt</h3>
+        <p class="price" style="color: var(--dark-green); font-weight: bold;">$239</p>
+        <p style="font-size: 0.8rem; color: #666;" data-en="Sizes: 38 - 45" data-kh="ទំហំ: ៣៨ - ៤៥">Sizes: 38 - 45</p>
+        
+        <button class="buy-btn" data-en="View Details" data-kh="មើលលម្អិត">View Details</button>
+             </div>
+        </div>
+        
+        </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="info">
+                <h4 data-en="NIRON SHOP" data-kh="ហាង​ និរន្តរ៍">NIRON SHOP</h4>
+                <p data-kh="ផ្តោតលើគុណភាព នឺង ភាពប្រណិត" data-en="This is a premium marketplace focusing on quality and simplicity.">This is a premium marketplace focusing on quality and simplicity.</p>
+            </div>
+            <div class="credits">
+                <h4 data-en="NAME" data-kh="ឈ្មោះ">NAME</h4>
+                <p data-en="PHON CHHAIHENG" data-kh="ផុន ឆៃហេង">PHON CHHAIHENG</p>
+                <p data-en="LECTURE : RY VISAN (WD)" data-kh="បង្រៀនដោយ  លោកគ្រូ  រី វិសាន">LECTURE : RY VISAN (WD)</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- <div id="productModal" class="modal"> --
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img id="modalImg" src="" alt="Shoe Detail">
+            </div>
+            <div class="modal-text">
+                <h2 id="modalName" class="dark-green-text">Shoe Name</h2>
+                <p id="modalPrice" class="price-text">$0.00</p>
+                <hr>
+                <p id="modalDesc" data-en="High-quality leather with premium stitching and comfortable sole." 
+                   data-kh="ស្បែកមានគុណភាពខ្ពស់ ជាមួយនឹងថ្នេរដេរយ៉ាងប្រណីត និងបាតស្បែកជើងដែលមានភាពងាយស្រួល។">
+                   High-quality leather with premium stitching...
+                </p>
+                <div class="modal-actions">
+                    <button class="buy-btn" data-en="Add to Cart" data-kh="បន្ថែមទៅក្នុងកន្ត្រក">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<script>
+    const langSwitch = document.getElementById('lang-switch');
+    
+    langSwitch.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        const elements = document.querySelectorAll('[data-en]');
+        const searchInput = document.getElementById('search-input');
+
+        elements.forEach(el => {
+            if (selectedLang === 'kh') {
+                el.textContent = el.getAttribute('data-kh');
+            } else {
+                el.textContent = el.getAttribute('data-en');
+            }
+        });
+
+        // Update Search Placeholder separately
+        if (searchInput) {
+            if (selectedLang === 'kh') {
+                searchInput.placeholder = "ស្វែងរកស្បែកជើង..."; // Khmer for "Search shoes..."
+            } else {
+                searchInput.placeholder = "Search shoes...";
+            }
+        }
+    });
+    let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Auto Slide every 5 seconds
+setInterval(() => {
+    changeSlide(1);
+}, 5000);
+</script>
+<!-- <script> 
+    const modal = document.getElementById("productModal");
+    const closeModal = document.querySelector(".close-modal");
+
+    // Get all "View Detail" buttons
+    const detailButtons = document.querySelectorAll(".buy-btn");
+
+    detailButtons.forEach(button => {
+        button.onclick = function() {
+            // Find the parent product box to get info
+            const productBox = this.closest(".product-box");
+            const imgSrc = productBox.querySelector("img").src;
+            const productName = productBox.querySelector("h3").innerText;
+            const productPrice = productBox.querySelector(".price").innerText;
+
+            // Fill the modal with this data
+            document.getElementById("modalImg").src = imgSrc;
+            document.getElementById("modalName").innerText = productName;
+            document.getElementById("modalPrice").innerText = productPrice;
+
+            // Show the modal
+            modal.style.display = "block";
+        }
+    });
+
+    // Close modal when 'x' is clicked
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Close modal when clicking outside the box
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script> -->
+</body>
+</html>
